@@ -5,20 +5,20 @@
 class Marker < Formula
   desc "Command-line client for Marker"
   homepage "https://docs.usemarker.ai/docs/cli"
-  version "0.3.2"
+  version "0.3.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marker-ai/marker-cli/releases/download/v0.3.2/marker_0.3.2_darwin_amd64.tar.gz"
-      sha256 "b6b4314ad4a7ae24b1eead08be8f3284108d1bb4243da40f19966310fd7ec56c"
+      url "https://github.com/marker-ai/marker-cli/releases/download/v0.3.3/marker_0.3.3_darwin_amd64.tar.gz"
+      sha256 "fadb6b2d4a6b4239ec6d6d0815d08ea078fd7d702b049764687179444e95db20"
 
       def install
         bin.install "marker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marker-ai/marker-cli/releases/download/v0.3.2/marker_0.3.2_darwin_arm64.tar.gz"
-      sha256 "2ee60e5e0f9a797f9c914062fab9cb0e86cd56d9e44bca4cb204ed52d277a065"
+      url "https://github.com/marker-ai/marker-cli/releases/download/v0.3.3/marker_0.3.3_darwin_arm64.tar.gz"
+      sha256 "e146f10c1b64a82f5cbac973b681ed5fb1a3ad5cda778f42e003360db0856092"
 
       def install
         bin.install "marker"
@@ -28,15 +28,15 @@ class Marker < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/marker-ai/marker-cli/releases/download/v0.3.2/marker_0.3.2_linux_amd64.tar.gz"
-      sha256 "4ea296715f1f4ba6bb57a3264cd0b87c742fee0b1ed74de79cd39714e7ef20bd"
+      url "https://github.com/marker-ai/marker-cli/releases/download/v0.3.3/marker_0.3.3_linux_amd64.tar.gz"
+      sha256 "237df9569e6da83ae4f7bc2b243e335c68c8988b3331eab4d4dcf82d7b0e285d"
       def install
         bin.install "marker"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/marker-ai/marker-cli/releases/download/v0.3.2/marker_0.3.2_linux_arm64.tar.gz"
-      sha256 "a816c74315038028da5de1dfba0ac3e61f91699c871c601e853ebf92127087cb"
+      url "https://github.com/marker-ai/marker-cli/releases/download/v0.3.3/marker_0.3.3_linux_arm64.tar.gz"
+      sha256 "b3bc6e79294a5db6e5911700a986b1ca24b22ec3d1d59f8855953f17a7bd2bd4"
       def install
         bin.install "marker"
       end
